@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NavVoice</title>
+</head>
+
+<body>
+
+<h1>NavVoice - Voice Navigation Assistant</h1>
+
+<button onclick="start()">Start Navigation</button>
+
+<script>
+
+function start(){
+let text = "You are near Bengaluru Bakery. Continue straight for 50 meters. Medical shop on your right.";
+
+let speech = new SpeechSynthesisUtterance(text);
+speechSynthesis.speak(speech);
+}
+
+</script>
+
+</body>
+</html>
